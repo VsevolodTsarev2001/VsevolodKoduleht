@@ -76,6 +76,18 @@ a:hover {
     text-decoration: underline;
 }
 
+.projects ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.projects li {
+    margin-bottom: 15px;
+}
+
+.projects a {
+    font-size: 1.1rem;
+}
 
 
 
