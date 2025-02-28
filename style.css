@@ -5,119 +5,177 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+    background-color: #e5e5e5;
     color: #333;
-    padding: 20px;
+    line-height: 1.8;
+    padding: 40px;
+    font-size: 1.1rem;
 }
 
 header {
-    background-color: #2c3e50;
+    background: linear-gradient(135deg, #3498db, #8e44ad);
     color: white;
     text-align: center;
-    padding: 20px 0;
-    margin-bottom: 20px;
+    padding: 30px 0;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .profile-img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    margin-bottom: 30px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    font-size: 1.1rem;
+}
+
+nav a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    color: #8e44ad;
+    transform: scale(1.1);
+}
+
+main {
+    margin-top: 30px;
 }
 
 section {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: #2c3e50;
     margin-bottom: 10px;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 5px;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+    font-weight: 500;
 }
-
 
 p {
     font-size: 1.2rem;
     color: #555;
-    line-height: 1.6;
-    margin-bottom: 15px;
+    line-height: 1.8;
+    margin-bottom: 20px;
 }
-
 
 .languages ul,
 .technologies ul {
     list-style: none;
-    padding-left: 20px;
+    padding-left: 0;
 }
 
 .languages li,
 .technologies li {
     font-size: 1.1rem;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    transition: color 0.3s, transform 0.3s;
 }
 
-
-a {
-    color: #3498db;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
+.languages li:hover,
+.technologies li:hover {
+    color: #8e44ad;
+    transform: translateX(10px);
 }
 
 .projects ul {
     list-style: none;
-    padding-left: 20px;
+    padding-left: 0;
 }
 
 .projects li {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .projects a {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.projects a:hover {
+    color: #8e44ad;
+    transform: scale(1.05);
 }
 
 footer {
     background-color: #2c3e50;
     color: white;
-    padding: 20px 0;
+    padding: 30px 0;
     text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 footer h2 {
     font-size: 1.8rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-weight: 600;
 }
 
 footer a {
     color: #3498db;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    color: #8e44ad;
+    transform: scale(1.1);
 }
 
-
 @media screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
     header h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .profile-img {
-        width: 120px;
-        height: 120px;
+        width: 150px;
+        height: 150px;
     }
 
     h2 {
@@ -131,15 +189,9 @@ footer a:hover {
     footer h2 {
         font-size: 1.5rem;
     }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
