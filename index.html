@@ -12,89 +12,103 @@
     <img src="slava.png" alt="Minu pilt" class="profile-img">
 </header>
 
-<section class="about">
-    <h2>Eriala ja õpingud</h2>
-    <p>Olen õppinud tarkvaraarendust ja hetkel õpin ka tehisintellekti arendamist.</p>
-</section>
-
-<section class="languages">
-    <h2>Keeled, mida olen õppinud või õpin</h2>
+<!-- Navigeerimisosa -->
+<nav>
     <ul>
-        <li>Inglise keel</li>
-        <li>Vene keel</li>
-        <li>Eesti keel</li>
-        <li>Japanise keel (õpin)</li>
+        <li><a href="#about">Eriala ja õpingud</a></li>
+        <li><a href="#languages">Keeled</a></li>
+        <li><a href="#technologies">Tehnoloogiad</a></li>
+        <li><a href="#skills">Minu oskused</a></li>
+        <li><a href="#projects">Projektid</a></li>
+        <li><a href="#git-explanation">Git selgitus</a></li>
+        <li><a href="#footer">Kontakt</a></li>
     </ul>
-</section>
+</nav>
 
-<section class="technologies">
-    <h2>IT tehnoloogiad, mida olen õppinud või õpin</h2>
-    <ul>
-        <li>HTML, PHP, CSS, JavaScript</li>
-        <li>Python</li>
-        <li>C#</li>
-        <li>Node.js</li>
-    </ul>
-</section>
+<!-- Põhiosa (Main) -->
+<main>
 
-<section class="skills">
-    <h2>Minu oskused arvuti taga</h2>
-    <p>Oskan arendada veebirakendusi, töödelda andmeid, lahendada programmeerimisülesandeid ning olen kursis uusimate IT arengutega.</p>
-</section>
+    <!-- Sektsioon: Eriala ja õpingud -->
+    <section class="about" id="about">
+        <h2>Eriala ja õpingud</h2>
+        <p>Olen õppinud tarkvaraarendust ja hetkel õpin ka tehisintellekti arendamist.</p>
+    </section>
 
-<section class="projects">
-    <h2>Minu parimad projektid</h2>
-    <ul>
-        <li><a href="https://github.com/VsevolodTsarev2001/VsevolodKoduleht" target="_blank">Veebileht kus on käivitatud GitHub Pages</a></li>
-    </ul>
-</section>
+    <!-- Sektsioon: Keeled -->
+    <section class="languages" id="languages">
+        <h2>Keeled, mida olen õppinud või õpin</h2>
+        <ul>
+            <li>Inglise keel</li>
+            <li>Vene keel</li>
+            <li>Eesti keel</li>
+            <li>Japanise keel (õpin)</li>
+        </ul>
+    </section>
 
-<section>
-<h2>Mis tahendab MVP?</h2>    
-    <p><strong>Minimaalne elujõuline toode </strong> on toote, teenuse või teenuse testversioon, millel on minimaalne funktsioonide kogum (mõnikord isegi üks), mis pakub lõpptarbijale väärtust.</p>
-</section>
+    <!-- Sektsioon: Tehnoloogiad -->
+    <section class="technologies" id="technologies">
+        <h2>IT tehnoloogiad, mida olen õppinud või õpin</h2>
+        <ul>
+            <li>HTML, PHP, CSS, JavaScript</li>
+            <li>Python</li>
+            <li>C#</li>
+            <li>Node.js</li>
+        </ul>
+    </section>
 
+    <!-- Sektsioon: Oskused -->
+    <section class="skills" id="skills">
+        <h2>Minu oskused arvuti taga</h2>
+        <p>Oskan arendada veebirakendusi, töödelda andmeid, lahendada programmeerimisülesandeid ning olen kursis uusimate IT arengutega.</p>
+    </section>
 
-<section class="git-explanation">
-    <h2>Selgitused: Kuidas luua ja hallata kaug-repositooriumit</h2>
-    <p>Git on hajutatud versioonihaldussüsteem, mida kasutatakse koodiprojektide haldamiseks. Kaug-repositooriumi (nt GitHub, GitLab) abil saab hoida projekti versioone ja jagada seda teiste arendajatega. Siin on sammud, kuidas luua kaug-repositoorium ja seostada see kohaliku repoga.</p>
-    
-    <h3>1. Loo kaug-repositoorium</h3>
-    <p>Esimene samm on luua kaug-repositoorium GitHubis või mõnes muus teenuses, nagu GitLab või Bitbucket. Kui olete repo loonud, saadate selle URL-i, mida kasutatakse kaug-repositooriumiga ühendamiseks.</p>
+    <!-- Sektsioon: Projektid -->
+    <section class="projects" id="projects">
+        <h2>Minu parimad projektid</h2>
+        <ul>
+            <li><a href="https://github.com/VsevolodTsarev2001/VsevolodKoduleht" target="_blank">Veebileht kus on käivitatud GitHub Pages</a></li>
+        </ul>
+    </section>
 
- <h3>2. Seosta oma kohalik repo kaug-repositooriumiga</h3>
-    <p>Kui teil on kohalik projekt, mille olete juba Gitiga versioonihaldusesse viinud, siis saate selle ühendada kaug-repositooriumiga käsuga:</p>
-    <pre><code>git remote add origin https://github.com/teie_kasutajanimi/teie_repo.git</code></pre>
-    <p>Kus <code>origin</code> on kaug-repositooriumi nimi ja <code>https://github.com/teie_kasutajanimi/teie_repo.git</code> on kaug-repositooriumi URL, mille saate GitHubist.</p>
+    <!-- Sektsioon: Git selgitus -->
+    <section class="git-explanation" id="git-explanation">
+        <h2>Selgitused: Kuidas luua ja hallata kaug-repositooriumit</h2>
+        <p>Git on hajutatud versioonihaldussüsteem, mida kasutatakse koodiprojektide haldamiseks. Kaug-repositooriumi (nt GitHub, GitLab) abil saab hoida projekti versioone ja jagada seda teiste arendajatega. Siin on sammud, kuidas luua kaug-repositoorium ja seostada see kohaliku repoga.</p>
+        
+        <h3>1. Loo kaug-repositoorium</h3>
+        <p>Esimene samm on luua kaug-repositoorium GitHubis või mõnes muus teenuses, nagu GitLab või Bitbucket. Kui olete repo loonud, saadate selle URL-i, mida kasutatakse kaug-repositooriumiga ühendamiseks.</p>
 
-    <h3>3. Failide lisamine ja commitimine</h3>
-    <p>Kui olete oma failid valmis saanud, tuleb need lisada versioonihaldusse ja teha esimene commit:</p>
-    <pre><code>git add .</code></pre>
-    <pre><code>git commit -m "Esimene commit: Minu portfolio"</code></pre>
-    <p>Esimene käsk <code>git add .</code> lisab kõik failid, teiseks käsk <code>git commit -m "Esimene commit"</code> teeb commit'i, ehk salvestab muudatused.</p>
+        <h3>2. Seosta oma kohalik repo kaug-repositooriumiga</h3>
+        <p>Kui teil on kohalik projekt, mille olete juba Gitiga versioonihaldusesse viinud, siis saate selle ühendada kaug-repositooriumiga käsuga:</p>
+        <pre><code>git remote add origin https://github.com/teie_kasutajanimi/teie_repo.git</code></pre>
+        <p>Kus <code>origin</code> on kaug-repositooriumi nimi ja <code>https://github.com/teie_kasutajanimi/teie_repo.git</code> on kaug-repositooriumi URL, mille saate GitHubist.</p>
 
-    <h3>4. Pushimine kaug-repositooriumisse</h3>
-    <p>Kui failid on commititud, saate need saata kaug-repositooriumisse järgmise käsuga:</p>
-    <pre><code>git push -u origin master</code></pre>
-    <p>Kui kasutate muud haru, näiteks <code>main</code>, siis kasutage seda:</p>
-    <pre><code>git push -u origin main</code></pre>
+        <h3>3. Failide lisamine ja commitimine</h3>
+        <p>Kui olete oma failid valmis saanud, tuleb need lisada versioonihaldusse ja teha esimene commit:</p>
+        <pre><code>git add .</code></pre>
+        <pre><code>git commit -m "Esimene commit: Minu portfolio"</code></pre>
+        <p>Esimene käsk <code>git add .</code> lisab kõik failid, teiseks käsk <code>git commit -m "Esimene commit"</code> teeb commit'i, ehk salvestab muudatused.</p>
 
-    <h3>5. Tõmbamine kaug-repositooriumist (Pull)</h3>
-    <p>Kui teised arendajad on teinud muudatusi või olete töötanud mitmesugustes keskkondades, saate värskendada oma kohalikke faile järgmise käsuga:</p>
-    <pre><code>git pull origin master</code></pre>
-    <p>Kui kasutate <code>main</code> haru, siis muutke käsu lõppu vastavalt:</p>
-    <pre><code>git pull origin main</code></pre>
+        <h3>4. Pushimine kaug-repositooriumisse</h3>
+        <p>Kui failid on commititud, saate need saata kaug-repositooriumisse järgmise käsuga:</p>
+        <pre><code>git push -u origin master</code></pre>
+        <p>Kui kasutate muud haru, näiteks <code>main</code>, siis kasutage seda:</p>
+        <pre><code>git push -u origin main</code></pre>
 
-    <h3>Kokkuvõte</h3>
-    <p>Kaug-repositooriumi kasutamine Gitiga võimaldab teil hoida oma projektide ajalugu ja jagada seda teistega. Ühendage oma kohalik repo kaug-repositooriumiga, tehke muudatusi, commitige need ja pushige kaug-repositooriumisse. Samuti saate igal ajal võtta kõige värskema versiooni projekti muudatustest.</p>
+        <h3>5. Tõmbamine kaug-repositooriumist (Pull)</h3>
+        <p>Kui teised arendajad on teinud muudatusi või olete töötanud mitmesugustes keskkondades, saate värskendada oma kohalikke faile järgmise käsuga:</p>
+        <pre><code>git pull origin master</code></pre>
+        <p>Kui kasutate <code>main</code> haru, siis muutke käsu lõppu vastavalt:</p>
+        <pre><code>git pull origin main</code></pre>
 
-    
+        <h3>Kokkuvõte</h3>
+        <p>Kaug-repositooriumi kasutamine Gitiga võimaldab teil hoida oma projektide ajalugu ja jagada seda teistega. Ühendage oma kohalik repo kaug-repositooriumiga, tehke muudatusi, commitige need ja pushige kaug-repositooriumisse. Samuti saate igal ajal võtta kõige värskema versiooni projekti muudatustest.</p>
+    </section>
 
-    
-   </section>
+</main>
 
-    
-<footer>
+<!-- Alajalg -->
+<footer id="footer">
     <h2>Minu portfell Wordpressis</h2>
     <p><a href="https://vsevolodtsarev23.thkit.ee/wp/" target="_blank">Minu WP portfolio</a></p>
 </footer>
